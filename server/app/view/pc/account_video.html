@@ -1,0 +1,16 @@
+<div class="account">
+    <ul>
+        <span class="selected">推薦視頻</span> {% for video in recommendVideo %}
+        <li>
+            <a href="/videosmenu/{{video.id}}">
+                <div class="border_top">
+                    <div class="picture"> <img src="{{video.img}}" alt=""></div>
+                    <span>{{video.video_name}}</span>
+                    <br>
+                    <button style="color: #3995ff;">觀看</button>
+                </div>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
